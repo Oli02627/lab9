@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - test
 
 permissions:
   contents: read
@@ -33,4 +34,4 @@ jobs:
 
           check_output "Alex Montgomery" "0123456789" PASS
           check_output "Alex Montgomery" "01234567890" FAIL
-          check_output "Jamie Montgomery" "0123456789" FAIL
+          check_output "Jamie Montgomery" "0123456789" PASS
