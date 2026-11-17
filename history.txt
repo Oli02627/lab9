@@ -1,0 +1,504 @@
+    1  grep -v pearse q.txt > file8
+    2  grep -c pearse file8
+    3  ls -l file*
+    4  tar -zcvf tar9.tgz file*
+    5  tar-tvf tar9.tgz > file10
+    6  tar -tvf tar9.tgz > file10
+    7  cat file10
+    8  tar -zcvf tar9.tgz file*
+    9  tar -tzf tar9.tgz | wc -l
+   10  ls -lh tar9.tgz
+   11  grep -E 'X00333333|X00111111' q.txt | wc -l
+   12  head -5 q.txt | tail -1 > ans2.txt
+   13  head -10 q.txt | tail -1 >> ans2.txt
+   14  cat ans2.txt
+   15  grep -E 'hugo|klopp' q.txt | wc -l
+   16  cut -c1-10 q.txt | head
+   17  cut -c10-14 q.txt | head
+   18  ps -ef | cut -c10-20,53-160 | head
+   19  grep ' itm' q.txt | sort | uniq | wc -l
+   20  grep computing q.txt | cut -d' ' -f2,3 | sort | uniq | awk '{print $2 " " $1}' > ans8.txt
+   21  cat ans8.txt
+   22  grep computing q.txt | sort | uniq > practice1.txt
+   23  cat practice1.txt
+   24  cut -d' ' -f1 q.txt | sort | uniq | wc -l
+   25  head -12 q.txt | tail > practice2.txt
+   26  cat practice2.txt
+   27  cd ~/os-ca1-practice
+   28  head -12 q.txt | tail -5 > practice2.txt
+   29  wc -l practice2.txt
+   30  cat practice.txt
+   31  cat practice2.txt
+   32  mkdir ~os-linux-final-redo
+   33  cp cd ~
+   34  cd ~
+   35  cd~
+   36  pwd
+   37  ls -l q.txt
+   38  cp ~/q.txt ~os-linus-final-redo
+   39  cd ~/os-linux-final-redo
+   40  mkdir -p ~/os-linux-final-redo
+   41  cp ~/q.txt ~os-linus-final-redo
+   42  cd ~/os-linux-final-redo
+   43  pwd
+   44  ls -l
+   45  cp ~/q.txt .
+   46  ls -l
+   47  ls -l q.txt
+   48  head -3 q.txt
+   49  head -3 q.txt > file2
+   50  cat file2
+   51  tail -3 q.txt >> file2
+   52  cat file2
+   53  head -4 q.txt | wc -c
+   54  cut -' ' -f1,4 q.txt > file1
+   55  cut -d' ' -f1,4 q.txt > file1
+   56  head file1
+   57  tail -3 q.txt >> file2
+   58  cat file2
+   59  wc -l file2
+   60  cat file2
+   61  wc -c file2
+   62  wc -l file2
+   63  head -3 q.txt > file2
+   64  tail -3 q.txt >> file2
+   65  wc -l file2
+   66  sort q.txt | uniq | wc-1
+   67  sort q.txt | uniq | wc-l
+   68  sort q.txt | uniq | wc -l
+   69  head -15 q.txt
+   70  head -15 q.txt | tail -6 > file5
+   71  cat file5
+   72  wc -l file5
+   73  sed 'n;n;n;n;G' q.txt file6
+   74  sed 'n;n;n;n;G' q.txt > file6
+   75  wc -l file6
+   76  cat file 6
+   77  cat file6
+   78  wc -l file6
+   79  sed 's/hugo/ugly/g' q.txt > file7
+   80  cat file7
+   81  grep -o ugly file7 | wc -l
+   82  grep hugo file7 | wc -l
+   83  grep pearse -v q.txt > file8
+   84  wc -l file8
+   85  grep pearse file 8 | wc -l
+   86  grep pearse file8 | wc -l
+   87  wc -l file8
+   88  cat file8
+   89  tar -zcvf tar.tgz file*
+   90  ls -l file*
+   91  mv tar.tgz tar9.tgz
+   92  ls -l tar9.tgz
+   93  tar -tvf.tgz > file 10
+   94  tar -tvf tar9.tgz > file 10
+   95  tar -tvf tar9.tgz > file10
+   96  cat file10
+   97  tar -zcvf tar9.tgz file*
+   98  tar -tzf tar9.tgz | wc -l
+   99  tar -zcvf tar9.tgz file1 file2 file5 file6 file7 file8 file10
+  100  ls -lh tar9.tgz
+  101  ls -l tar9.tgz
+  102  ls -lh tar9.tgz
+  103  grep -e 'X00333333|X00111111' q.txt | wc -l
+  104  grep -E 'X00333333|X00111111' q.txt | wc -l
+  105  heard -5 q.txt | tal -1 > ans2.txt
+  106  head -5 q.txt | tal -1 > ans2.txt
+  107  head -5 q.txt | tail -1 > ans2.txt
+  108  cat ans.txt
+  109  cat ans2.txt
+  110  wc -l ans2.txt
+  111  head -10 q.txt | tail -1 >> ans2.txt
+  112  cat ans2.txt
+  113  grep -E 'hugo|klopp' q.txt | wc -l
+  114  grep -E 'hugo|klopp' q.txt > ans3.txt
+  115  cut -c1-10 > ans4.txt
+  116  cat ans4.txt
+  117  cut -c1-10 > ans4.txt
+  118  head ans4.txt
+  119  cut -c1-10 > ans4.txt
+  120  cut -c1-10 q.txt > ans4.txt
+  121  cat ans4.txt
+  122  head ans4.txt
+  123  cut -c10-14 q.txt >ans5.txt
+  124  head ans5.txt
+  125  cat ans5.txt
+  126  ps -ef | cut -c10-20,53-60 
+  127  ps -ef | cut -c10-20,53-60 | head
+  128  ps -ef | cut -c10-20,53-160 | head
+  129  grep 'itm' q.txt |sort | uniq | wc -l
+  130  grep computing q.txt | cut -d@@ -f2,3 | sort | uniq | awk '{print $2 " " $1}' >ans8.txt
+  131  grep computing q.txt | cut -d' ' -f2,3 | sort | uniq | awk '{print $2 " " $1}' >ans8.txt
+  132  cat ans9.txt
+  133  cat ans8.txt
+  134  vi instmonog.sh
+  135  chmod +x instmonog.sh 
+  136  ./instmonog.sh 
+  137  vi ca.txt
+  138  mkdie -p ~/os-semophore-pracrice
+  139  mkdir -p ~/os-semophore-pracrice
+  140  mv ~/os-semophore-pracrice.zip ~/os-semaphore-practice/
+  141  mv ~/os-semaphore-practical-pack.zip ~/os-semaphore-practice/
+  142  mkdir -p ~/sem-practice
+  143  mv ~/os-semaphore-practical-pack.zip ~/sem-practice/
+  144  unzip os-semphore-practical-pack-zip
+  145  unzip os-sempahore-practical-pack-zip
+  146  mv ~/os-semaphore-practical-pack.zip ~/sem-practice/
+  147  mkdir -p ~/sem-practice
+  148  mv ~/os-semaphore-practical-pack.zip ~/sem-practice/
+  149  ls -lh ~/os-semaphore-practical-pack.zip
+  150  mv ~/os-semaphore-practical-pack.zip ~/sem-practice/
+  151  cd ~/sem-practice
+  152  unzip os-semaphore-practical-pack.zip
+  153  cd os-semaphore-practical-pack
+  154  ls -l
+  155  cd~
+  156  cd ~
+  157  mkdir -p ~/lab10-practice
+  158  cd ~/lab10-practice
+  159  mv ~/'scripts (1).zip' ./scripts.zip
+  160  unzip scripts.zip
+  161  chmod +x *.sh
+  162  ls -l
+  163  ./doAB.sh
+  164  nano /doAB.sh
+  165  cd ~/lab10-practice
+  166  nano doAB.sh
+  167  cd ~/lab10-practice
+  168  nano doAB.sh
+  169  cat doAB.sh
+  170  nano scriptA.sh
+  171  cat scriptA.sh
+  172  cd ~/lab10-practice
+  173  nano scriptA.sh
+  174  cat scriptA.sh
+  175  nano scriptB.sh
+  176  cat scriptB.sh
+  177  rmdir lock1 2>/dev/null
+  178  ./doAB.sh
+  179  ls -l ~/*.c
+  180  mv ~/'stack-bad (1).c' ~/lab10-practice/stack-bad.c
+  181  ls -l stack-bad.c
+  182  gcc stack-bad.c -o stack-bad -pthread
+  183  ls -l stack-bad
+  184  nano stack-bad.c
+  185  gcc stack-bad.c -o stack-bad -pthread
+  186  nano +50 stack-bad.c
+  187  gcc stack-bad.c -o stack-bad -pthread
+  188  nl -ba stack-bad.c | sed -n '45,80p'
+  189  nano +68 stack-bad.c
+  190  gcc stack-bad.c -o stack-bad -pthread
+  191  ./stack-bad
+  192  tail -12 stack-bad.c
+  193  ls -l
+  194  ls -lh
+  195  mkdir -p ~/osrepeatca
+  196  mv ~ /ca.txt
+  197  mv ~ /ca.txt(1)
+  198  mv ~ 'ca.txt'(1) ~/osrepeatca
+  199  mv ~ ca.txt(1) ~/osrepeatca
+  200  ls -l
+  201  mv ~ ca_txt(1) ~/osrepeatca
+  202  mv ~ ca_txt(1) 
+  203  mv ~ ca_txt ~/osrepeatca
+  204  cd ~/osrepeat-ca
+  205  ls-lh
+  206  ls -l
+  207  cd ~/osrepeat-ca
+  208  ls -l ca_txt
+  209  ls -l ca.txt
+  210  mv ~ ca.txt ~/osrepeatca
+  211  mkdir -p ~/osrepeatca
+  212  mv ~ ca.txt ~/osrepeatca
+  213  cp ~ca.txt
+  214  cp ~/ca.txt
+  215  cp ~/ca.txt/osrepeatca
+  216  cp --help
+  217  cat ca.txt
+  218  mkdir -p ~/osreapeat26
+  219  cp ~ca.txt ~/osrepeat26
+  220  cp ~ca.txt(1) ~/osrepeat26
+  221  cp ~ ca.txt(1) ~/osrepeat26
+  222  cp ~\ca.txt(1) ~/osrepeat26
+  223  cp ~\ca.txt ~/osrepeat26
+  224  cp ~\ca.txt1 ~/osrepeat26
+  225  ls -l ca.txt
+  226  ls -l ca.txt(1)
+  227  ls 
+  228  cp ~\ca_(1).txt ~/osrepeat26
+  229  mkdir -p ~/ca-reapeat-26
+  230  cd ~/ca-reapeat-26
+  231  cp ~/ca_1.txt
+  232  cp ~/ca_(1).txt
+  233  mv ~/ca_(1).txt ~/ca1.txt/
+  234  mv /ca_(1).txt ~/ca1.txt/
+  235  cp ~ ca.txt
+  236  cp ~ ca_(1).txt
+  237  cp ~ca_(1).txt
+  238  cp ~/ca_(1).txt
+  239  mv ~'ca_(1).txt' ~/ca-repeat-26
+  240  mv ~/'ca_(1).txt' ~/ca-repeat-26
+  241  cp ca_(1).txt
+  242  cat ca_(1).txt
+  243  ls -l
+  244  mv ~/'ca_(1).txt' ~/ca-repeat-26
+  245  pwd
+  246  cp ~/ca_1.txt
+  247  cp ~/ca_(1).txt
+  248  cp ~/ca_(1).txt .
+  249  pwd
+  250  ls -l
+  251  cat ca_(2).txt
+  252  cut -d ' ' -f1,4 ca_(2).txt
+  253  cut -d '  -f1,4 ca_(2).txt
+  254  cut -d '' -f1,4 ca_(2).txt
+  255  cut -d '  -f1,4 ca_(2).txt
+  256  cut -d' ' -f1,4 ca(2).txt
+  257  cut -d' ' -f1,4 ca.txt
+  258  cut -d' ' -f1,4 ca_2.txt
+  259  head -3 
+  260  mkdie -p ~/devops/week1
+  261  mkdir -p ~/devops/week1
+  262  cd ~/devops/week1
+  263  pwd
+  264  printf '#!/bin/bash\necho "Hello devops week1"\n' > hellow.sh
+  265  bash hellow.sh
+  266  git config --global user.name "OLI OGBOGOH"
+  267  git config --global user.email "o.ogbogoh27@gmail.com"
+  268  git init
+  269  git branch -M main
+  270  cd ~
+  271  mv devops devops_old
+  272  mkdir -p devops/week1
+  273  cd ~/devops/week1
+  274  pwd
+  275  git status
+  276  git log --online
+  277  cat hellow.sh
+  278  ls
+  279  pwd
+  280  git status
+  281  git log --online
+  282  ls
+  283  git config --global user.name "OLI OGBOGOH"
+  284  git config --global user.email "o.ogbogoh27@gmail.com"
+  285  ssh-keygen -t ed25519 -C "o.ogbogoh27@gmail.com"
+  286  cat ~/.ssh/id_ed25519.pub
+  287  ssh -T git@github.com
+  288  printf '#!/bin/bash\necho "Hello devops week1"\n' > hellow.sh
+  289  nash hellow.sh
+  290  bash hellow.sh
+  291  cat hellow.sh
+  292  git init 
+  293  git branch -M main
+  294  git remote add origin git@github.com:Oli02627//devopsWeek1.git
+  295  git add hellow.sh
+  296  git commit -m "add hello script for devops week1"
+  297  git push -u origin main
+  298  printf '#!/bin/bash\necho "Hello DEVOPS week1"\n' > hellow.sh
+  299  bash hellow.sh
+  300  git diff
+  301  git add hellow.sh
+  302  git commit -m "Change devops greeting to uppercase DEVOPS"
+  303  git push
+  304  bash hellow.sh
+  305  git log --online
+  306  git log --oneline
+  307  git status
+  308  git remote add origin git@github.com:Oli02627//devopsWeek1.gitgit remote -v
+  309  git push -u origin main
+  310  git remote set-url origin git@github.com:Oli02627/devopsWeek1.git
+  311  git push -u origin main
+  312  gcloud project list
+  313  gcloud projects list
+  314  cd ~/devops
+  315  mkdir -p week2
+  316  cd week2
+  317  git clone git@github.com:Oli02627/devopsWeek1.git .
+  318  git switch main
+  319  git log --oneline
+  320  printf 'echo "Hello devops week2"\n' >> hellow.sh
+  321  bash hellow.sh
+  322  git add hellow.sh
+  323  git commit -m "Add week2 message for version 3"
+  324  git push origin main
+  325  git tag ver1 deaf9e7
+  326  git tag ver2 40da67b
+  327  git tag ver3 HEAD
+  328  git push origin --tags
+  329  git tag
+  330  cd devops
+  331  cat
+  332  bash hellow.sh
+  333  mkdirc-p week2tag
+  334  mkdir -p week2tag
+  335  cd week2tag
+  336  git clone git@github.com:Oli02627/devopsWeek1.git .
+  337  git fetch origin --tags
+  338  git switch -c tag-test ver1
+  339  cat hellow.sh
+  340  printf 'echo "Hello from tag-test branch"\n' >> hellow.sh
+  341  bash hellow.sh
+  342  git add hellow.sh
+  343  git commit -m "testtag"
+  344  git push -u origin tag-test
+  345  git --nopaper log --oneline
+  346  git --no-pager log --oneline
+  347  cd devops/week1
+  348  git switch main
+  349  git pull origin main
+  350  git switch -c CR101
+  351  printf '/bin/bash\necho "This is cr101"\n' > cr101.sh
+  352  git add cr101.sh
+  353  git commit -m "Add cr101 scipt"
+  354  git push -u origin CR101
+  355  git switch main
+  356  git switch -c CR102
+  357  printf '#!bin/bash\necho "This is cr102"\n > cr102.sh
+  358  git commit -m "add cr102 script"
+  359  git push -u origin CR102
+  360  printf '#!bin/bash\necho "This is cr102"\n > cr102.sh
+  361  printf '#!/bin/bash\necho "This is cr102"\n' > cr102.sh
+  362  bash cr102.sh
+  363  git add cr102.sh
+  364  git commit-m "add cr102"
+  365  git commit -m "add cr102"
+  366  git push -u origin CR102
+  367  git switch main
+  368  git pull origin main
+  369  git merge CR102
+  370  git push origin main
+  371  git push origin --delete CR102
+  372  git branch -d CR102
+  373  cd .
+  374  cd ..
+  375  cd .
+  376  cd ..
+  377  mkdir -p ~devops/devsopsProj
+  378  mkdir -p ~/devops/devsopsProj
+  379  cd devops/devsopsProj
+  380  git init
+  381  git branch -M main
+  382  git remote add origin git@github.com:Oli02627/devsopsProj.git
+  383  nano count1.sh
+  384  bash count1.sh
+  385  nano count2.sh
+  386  nano count3.sh
+  387  nano count4.sh
+  388  nano count5.sh
+  389  nano count6.sh
+  390  nano count7.sh
+  391  nano count8.sh
+  392  nano count9.sh
+  393  nano count10.sh
+  394  bash count1.sh
+  395  bash count2.sh
+  396  ls
+  397  cat count5.sh
+  398  cat count6.sh
+  399  nano count6.sh
+  400  cat count6.sh
+  401  cat count7.sh
+  402  nano count7.sh
+  403  nano count8.sh
+  404  nano count9.sh
+  405  bash count1.sh
+  406  bash count2.sh
+  407  nano count9.sh
+  408  nano count10.sh
+  409  git add count*.sh
+  410  git commit -m "10 scripts"
+  411  git push -u origin main
+  412  printf '#!/bin/bash\necho "10"\n' > count10.sh
+  413  git add count*.sh
+  414  git commit -m "10 scripts"
+  415  git push -u origin main
+  416  printf '#!/bin/bash\necho "TEN"\n' > count10.sh
+  417  bash count1.sh
+  418  git add count10.sh
+  419  git commit -m "Change count10 to TEN"
+  420  git push origin main
+  421  cd ~/devops/devsOpsProj
+  422  cd devops
+  423  cd devsopsProj
+  424  pwd
+  425  ls
+  426  git status
+  427  git branch
+  428  git remote -v
+  429  mkdir v1
+  430  cd v1
+  431  git clone git@github.com:Oli02627/devsopsProj.git
+  432  git status
+  433  cd..
+  434  cd ..
+  435  cd v1
+  436  mkdir v1
+  437  cd v1
+  438  git clone git@github.com:Oli02627/devsopsProj.git
+  439  cd devsopsProj
+  440  git status
+  441  git switch -c ONE-V1
+  442  git branch
+  443  ls
+  444  nano count1.sh
+  445  cat count1.sh
+  446  git add count.sh
+  447  git add count1.sh
+  448  gh auth status
+  449  gh auth login
+  450  count?  [Use arrows to move, type to filter]
+  451  gh auth login --hostname github.com --git-protocol ssh --web --skip-ssh-key
+  452  gh auth login --git-protocol ssh --web --skip-ssh-key --hostname github.com
+  453  gh auth status
+  454  cd devops
+  455  gh repo create lab9 --public --clone
+  456  cd lab9
+  457  git branch --show-current
+  458  git init -b main
+  459  gh repo create lab9 --public --source= --remote=origin
+  460  git remote -v
+  461  gh repo view Oli02627/lab9 --json nameWithOwner,visibility
+  462  history | grep '[g]h repo create'
+  463  git remote -v
+  464  nano validate-data.sh
+  465  bash validate-data.sh "Alex Montgomery" "0123456789"
+  466  bash validate-data.sh "Jamie Montgomery" "0123456789"
+  467  bash validate-data.sh "Alex Montgomery" "01234567890"
+  468  mkdir -p .github/workflows
+  469  nano .github/workflows/basictests.yml
+  470  git add validate-data.sh .github/workflows/basictests.yml
+  471  git commit -m "Add validation script and GitHub Actions tests"
+  472  git branch --show-current
+  473  git push -u origin main
+  474  git status -sb
+  475  git log -1 --oneline
+  476  git status -sb
+  477  git log -1 --oneline
+  478  git add validate-data.sh .github/workflows/basictests.yml
+  479  git commit -m "Add validation script and GitHub Actions tests"
+  480  git add validate-data.sh .github/workflows/basictests.yml
+  481  git commit -m "Add validation script and GitHub Actions tests"
+  482  git branch -m main
+  483  git push -u origin main
+  484  git switch main
+  485  git switch -c test
+  486  nano validate-data.sh
+  487  git add validate-data.sh
+  488  git commit -m "Increase maximum name length to 20"
+  489  git push -u origin test
+  490  nano .github/workflows/basictests.yml
+  491  check_output "Jamie Montgomery" "0123456789" PASS
+  492  nano .github/workflows/basictests.yml
+  493  check_output "Jamie Montgomery" "0123456789" PASS
+  494  nano .github/workflows/basictests.yml
+  495  git add .github/workflows/basictests.yml
+  496  git commit -m "Run validation tests on main and test"
+  497  git push
+  498  cd ~/devops/lab9
+  499  git status
+  500  git branch --show-current
+  501  ls
+  502  git log -3 --oneline
+  503  git add history.txt
+  504  history > history.txt
